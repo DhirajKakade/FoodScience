@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/splash_screen_logo_final" />
+
+            <ImageView
+                android:id="@+id/bubble1"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginLeft="89dp"
+                android:layout_marginTop="41dp"
+                android:background="@drawable/bubble" />
+
+            <ImageView
+                android:id="@+id/bubble2"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginLeft="96dp"
+                android:layout_marginTop="38dp"
+                android:background="@drawable/bubble" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="Food Science"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp"
+        android:text="Copyright © 2018-2020 Unitglo Solutions All Rights Reserved"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:textSize="12dp" />
+
+</RelativeLayout>

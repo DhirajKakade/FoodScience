@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView_activity_main_tital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Log In"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_activity_main_tital"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editText_activity_main_username"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/editText_activity_main_userpwd"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="Passward"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_activity_main_login"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linearLayout_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Login"
+        android:textColor="#FFFFFF" />
+
+    <requestFocus />
+
+    <TextView
+        android:id="@+id/textView_activity_main_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_activity_main_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="OR" />
+
+    <TextView
+        android:id="@+id/textView_activity_main_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_activity_main_or"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
